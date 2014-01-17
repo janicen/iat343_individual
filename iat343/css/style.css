@@ -1,0 +1,165 @@
+/*
+
+	Janice Ng
+	IAT 343: D101
+	Individual Portfolio Website
+	CSS file: Main Style
+
+	1.Base 2.Grid 3.Layout 4.Links
+
+*/
+
+/* ================================================================ 
+	BASE START 
+================================================================  */
+
+html, body {
+	font-family: 'Arial Black', sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-image: url('../img/lightpaperfibers.png');
+}
+
+html, body, ul, ol, li, form,
+h1, h2, h3, h4, h5, h6, p {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* ========== FONTS ========== */
+
+#home li {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+#assignments li, #labs li {
+	font-size: 1.2em;
+}
+
+/* ========== NAVBAR ========== */
+
+#home ul {
+	text-align: center;
+}
+
+#home ul li {
+	display: inline-block;
+	padding: 5em 3em;
+}
+
+#assignments nav, #labs nav {
+	overflow: hidden;
+}
+
+#assignments li, #labs li {
+	list-style: none;
+	float: right;
+	padding: 2em;
+
+}
+
+/*#assignments .weekly nav {
+	border: 1px solid orange;
+}
+*/
+#assignments .weekly ul li, #labs .weekly ul li {
+	border: 3px solid #9E9E9E;
+	margin: 0 .5em;
+	padding: .2em;
+}
+
+/* ================================================================ 
+	BASE END
+================================================================  */
+
+
+
+/* ================================================================ 
+	GRID START
+================================================================  */
+
+/* ========== CONTAINER ========== */
+
+.container {
+	margin: 0em auto;
+	padding: 1.5em;
+	max-width: 1280px;
+}
+
+/* ================================================================ 
+	GRID END
+================================================================  */
+
+
+
+/* ================================================================ 
+	LAYOUT START
+================================================================  */
+
+/* ========== CONTENT ========== */
+
+.content {
+	width: 100%;
+	text-align: center;
+}
+
+.logo img {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	margin-top: 10em;
+}
+
+/* ========== SECTIONS ========== */
+
+section {
+	width: 100%;
+	text-align: left;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+	width: 100%;
+	padding-top: 2em;
+}
+
+/* ================================================================ 
+	LAYOUT END
+================================================================  */
+
+
+
+/* ================================================================ 
+	LINKS START 
+================================================================  */
+
+/* ========== LINKS ========== */
+
+a {
+	color: #9E9E9E;
+	text-decoration: none;
+
+	/* ========== FADE TRANSITION ========== */
+	-webkit-transition:color .3s ease-out, background .5s ease-in;
+	-moz-transition:color 	.3s ease-out, background .5s ease-in;
+	-o-transition:color 	.3s ease-out, background .5s ease-in;
+  	-ms-transition:color 	.3s ease-out, background .5s ease-in;
+  		transition:color 	.3s ease-out, background .5s ease-in;
+}
+
+	a:hover {
+		color: #000000;
+		border-bottom: 3px solid black;
+	}
+
+	.onpage {
+		color: #000000;
+		border-bottom: 3px solid black;
+	}
+
+/* ================================================================ 
+	LINKS END 
+================================================================  */
