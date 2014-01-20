@@ -27,18 +27,33 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 }
 
+img {
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+	padding-bottom: 3em;
+}
+
 /* ========== FONTS ========== */
+
+h2 {
+	width: 8%;
+	margin-bottom: 2em;
+	padding-bottom: .3em;
+	font-size: 1.2em;
+	border-bottom: 3px solid black;
+}
+
+/* ========== NAVBAR ========== */
 
 #home li {
 	font-size: 1.5em;
 	font-weight: 600;
 }
 
-#assignments li, #labs li {
-	font-size: 1.2em;
-}
-
-/* ========== NAVBAR ========== */
+	#assignments li, #labs li {
+		font-size: 1.2em;
+	}
 
 #home ul {
 	text-align: center;
@@ -49,26 +64,19 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 5em 3em;
 }
 
-#assignments nav, #labs nav {
-	overflow: hidden;
-}
+	#assignments li, #labs li {
+		list-style: none;
+		float: right;
+		padding: 2em;
 
-#assignments li, #labs li {
-	list-style: none;
-	float: right;
-	padding: 2em;
+	}
 
-}
-
-/*#assignments .weekly nav {
-	border: 1px solid orange;
-}
-*/
-#assignments .weekly ul li, #labs .weekly ul li {
-	border: 3px solid #9E9E9E;
-	margin: 0 .5em;
-	padding: .2em;
-}
+	.weekly {
+		width: 3%;
+		text-align: left;
+		line-height: 2.5em;
+		position: fixed;
+	}
 
 /* ================================================================ 
 	BASE END
@@ -102,7 +110,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .content {
 	width: 100%;
+	float: left;
 	text-align: center;
+	padding: 2em;
 }
 
 .logo img {
@@ -114,16 +124,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ========== SECTIONS ========== */
 
-section {
-	width: 100%;
+.sectionwrapper {
+	width: 85%;
+	float: left;
 	text-align: left;
+	margin: .5em 0 0 12em;
 }
 
 /* ========== FOOTER ========== */
 
 footer {
 	width: 100%;
-	padding-top: 2em;
+	float: left;
+	text-align: center;
+	padding: 1em 0;
+	border-top: 1px solid black;
 }
 
 /* ================================================================ 
@@ -151,13 +166,15 @@ a {
 }
 
 	a:hover {
-		color: #000000;
-		border-bottom: 3px solid black;
+		color: #FFFFFF;
+		/*border-bottom: 3px solid black;*/
+		background-color: #000000;
 	}
 
 	.onpage {
-		color: #000000;
-		border-bottom: 3px solid black;
+		color: #FFFFFF;
+		/*border-bottom: 3px solid black;*/
+		background-color: #000000;
 	}
 
 /* ================================================================ 
