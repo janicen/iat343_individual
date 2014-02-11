@@ -186,3 +186,27 @@ a {
 /* ================================================================ 
 	LINKS END 
 ================================================================  */
+
+/* =========================================================
+ * Video Responsive CSS Styles
+ * Based on code found here: http://amobil.se/2011/11/responsive-embeds/
+ * ========================================================= */
+
+.video {
+	position: relative;
+	margin-bottom: 2em;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+	.video iframe,
+	.video object,
+	.video embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    border: none;
+	}
